@@ -1,113 +1,88 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>IPL FREE TEAM</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram Join</title>
 
-        body, html {
-            height: 100%;
-            width: 100%;
-            background-color: #fff;
-            overflow: hidden;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
-        .main-container {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            width: 100%;
-            align-items: center;
-        }
+    body {
+        background: #0b0f1a;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        /* Image Link Section */
-        .image-link {
-            flex: 0 0 75%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            text-decoration: none; /* Link underline hatane ke liye */
-            cursor: pointer;
-        }
+    .container {
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
 
-        .image-link img {
-            max-width: 95%;
-            height: 100%;
-            object-fit: contain;
-        }
+    .hero-img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    }
 
-        /* Button Section */
-        .button-section {
-            flex: 1;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 10px;
-        }
+    .btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 22px 50px;
+        background: linear-gradient(45deg, #00ffcc, #00aaff);
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 16px;
+        font-size: 20px;
 
-        /* Red Button like image_3/4 */
-        .red-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #cc0000;
-            color: white;
-            text-decoration: none;
-            width: 90%;
-            max-width: 450px;
-            padding: 16px;
-            border-radius: 12px;
-            font-size: 22px;
-            font-weight: 900;
-            border: 2px solid #004d99;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            white-space: nowrap;
-        }
+        /* glowing + floating effect */
+        box-shadow: 0 0 15px #00ffcc, 0 0 35px #00aaff;
+        animation: floatGlow 2s infinite ease-in-out;
+        transition: 0.3s;
+    }
 
-        .tg-icon-circle {
-            width: 30px;
-            height: 30px;
-            background: white;
-            border-radius: 50%;
-            margin-right: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .btn:hover {
+        transform: scale(1.1);
+    }
 
-        .tg-icon-circle svg {
-            width: 18px;
-            height: 18px;
-            fill: #cc0000;
+    @keyframes floatGlow {
+        0% {
+            transform: translateY(0px);
+            box-shadow: 0 0 10px #00ffcc, 0 0 25px #00aaff;
         }
-    </style>
+        50% {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px #00ffcc, 0 0 45px #00aaff;
+        }
+        100% {
+            transform: translateY(0px);
+            box-shadow: 0 0 10px #00ffcc, 0 0 25px #00aaff;
+        }
+    }
+
+</style>
 </head>
+
 <body>
 
-<div class="main-container">
-    <!-- Clickable Image -->
-    <a href="https://t.me/+rQtloA-9JetiZmQ1" target="_blank" class="image-link">
-        <img src="https://i.ibb.co/6RTPXN8G/image-4.png" alt="Winning Proof">
+<div class="container">
+
+    <img class="hero-img" src="https://i.ibb.co/qF4gmJ0m/IMG-1636.jpg" alt="Banner">
+
+    <a class="btn" href="https://t.me/+eoTj1kirvwU3YzJl" target="_blank">
+        Join Free Telegram
     </a>
 
-    <!-- Bottom Button -->
-    <div class="button-section">
-        <a href="https://t.me/+rQtloA-9JetiZmQ1" target="_blank" class="red-button">
-            <div class="tg-icon-circle">
-                <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.891 8.146l-2.003 9.464c-.149.659-.541.823-1.091.511l-3.051-2.249-1.472 1.417c-.163.163-.299.299-.614.299l.218-3.111 5.656-5.109c.246-.219-.054-.341-.381-.123l-6.991 4.402-3.016-.944c-.655-.204-.668-.655.137-.969l11.785-4.54c.545-.198 1.022.128.832.941z"/></svg>
-            </div>
-            JOIN FREE TELEGRAM
-        </a>
-    </div>
 </div>
 
 </body>
