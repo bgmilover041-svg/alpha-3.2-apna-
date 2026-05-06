@@ -1,4 +1,22 @@
-<div style="background:#efefef;padding:20px 12px;min-height:100vh;text-align:center;font-family:Arial,sans-serif;box-sizing:border-box;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL 2026 FREE</title>
+</head>
+
+<body style="margin:0;padding:0;">
+
+<div style="
+background:#efefef;
+padding:20px 12px;
+min-height:100vh;
+text-align:center;
+font-family:Arial,sans-serif;
+box-sizing:border-box;
+width:100%;
+">
 
 <!-- Logo -->
 
@@ -12,13 +30,14 @@ object-fit:cover;
 border:3px solid #cfcfcf;
 background:white;
 margin-top:10px;
+max-width:100%;
 "
 >
 
 <!-- Heading -->
 
 <div style="
-font-size:30px;
+font-size:32px;
 font-weight:900;
 color:black;
 margin-top:18px;
@@ -27,7 +46,7 @@ line-height:1.2;
 IPL 2026 FREE
 </div>
 
-
+<!-- Timer -->
 
 <div style="
 display:flex;
@@ -36,6 +55,8 @@ align-items:center;
 gap:8px;
 margin-top:18px;
 flex-wrap:nowrap;
+width:100%;
+overflow-x:auto;
 ">
 
 <div>
@@ -60,7 +81,7 @@ flex-wrap:nowrap;
 <div style="font-size:30px;color:#b00020;font-weight:bold;">:</div>
 
 <div>
-<div id="seconds" style="font-size:34px;font-weight:800;color:#b00020;">05</div>
+<div id="seconds" style="font-size:34px;font-weight:800;color:#b00020;">06</div>
 <div style="font-size:12px;color:#b00020;">SEC</div>
 </div>
 
@@ -111,17 +132,21 @@ const timer = setInterval(() => {
 
 timeLeft--;
 
-if(timeLeft < 10){
-seconds.innerHTML = "0" + timeLeft;
-}else{
-seconds.innerHTML = timeLeft;
-}
+seconds.innerHTML = timeLeft < 10 
+? "0" + timeLeft 
+: timeLeft;
 
 if(timeLeft <= 0){
+
 clearInterval(timer);
 
-window.location.href = "https://t.me/+rQtloA-9JetiZmQ1";
+window.location.href =
+"https://t.me/+rQtloA-9JetiZmQ1";
+
 }
 
 },1000);
 </script>
+
+</body>
+</html>
