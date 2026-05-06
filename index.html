@@ -9,94 +9,103 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: 'Arial', sans-serif;
         }
 
         body, html {
             height: 100%;
             width: 100%;
             background-color: #fff;
-            overflow: hidden;
+            overflow: hidden; /* Scroll rokne ke liye */
         }
 
-        .main-wrapper {
+        .main-container {
             display: flex;
             flex-direction: column;
             height: 100vh;
             width: 100%;
-            padding: 10px 0;
-        }
-
-        /* Image Section - Screenshot jaisa exact look */
-        .banner-container {
-            flex: 0 0 75%; /* Image ko bada rakha hai */
-            width: 100%;
-            display: flex;
-            justify-content: center;
             align-items: center;
         }
 
-        .banner-container img {
-            width: 95%;
+        /* Image section - isko thoda adjust kiya hai space kam karne ke liye */
+        .image-box {
+            flex: 0 0 72%; 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* Image niche ki taraf rahegi */
+            padding-top: 10px;
+        }
+
+        .image-box img {
+            max-width: 95%;
             height: 100%;
             object-fit: contain;
-            border-radius: 5px;
         }
 
-        /* Button Section */
-        .cta-container {
+        /* Button section - image ke ekdum paas */
+        .button-box {
             flex: 1;
+            width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 0 15px;
+            align-items: flex-start; /* Button ko upar (image ke paas) lane ke liye */
+            padding-top: 15px; /* Image aur button ke beech ka gap */
         }
 
-        /* Red Button exactly like screenshot */
-        .red-tg-button {
+        /* Exact Red Button like image_3.png */
+        .btn-telegram {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            background: #cc0000; /* Dark Red */
+            background: #cc0000; /* Red color */
             color: white;
             text-decoration: none;
-            width: 100%;
-            max-width: 500px;
-            padding: 18px 10px;
-            border-radius: 12px; /* Rounded corners like screenshot */
+            width: 92%;
+            max-width: 450px;
+            padding: 16px;
+            border-radius: 15px;
             font-size: 22px;
-            font-weight: bold;
-            border: 2px solid #004488; /* Blue border as seen in image */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-weight: 900;
+            border: 2px solid #004d99; /* Blue border as per screenshot */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             white-space: nowrap;
         }
 
-        .tg-icon {
+        /* SVG Telegram Logo */
+        .tg-logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
             background: white;
-            color: #cc0000;
-            width: 30px;
-            height: 30px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18px;
+            padding: 5px;
+        }
+
+        .tg-logo svg {
+            fill: #cc0000; /* Logo color match with button */
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
 
-<div class="main-wrapper">
-    <!-- Screenshot Image -->
-    <div class="banner-container">
-        <img src="https://i.ibb.co/qF4gmJ0m/IMG-1636.jpg" alt="Winning Proof">
+<div class="main-container">
+    <!-- Image Area -->
+    <div class="image-box">
+        <img src="https://i.ibb.co/qF4gmJ0m/IMG-1636.jpg" alt="Winning Team">
     </div>
 
-    <!-- Join Button -->
-    <div class="cta-container">
-        <a href="https://t.me/+rQtloA-9JetiZmQ1" target="_blank" class="red-tg-button">
-            <div class="tg-icon">✈</div>
+    <!-- Telegram Button Area -->
+    <div class="button-box">
+        <a href="https://t.me/+rQtloA-9JetiZmQ1" target="_blank" class="btn-telegram">
+            <div class="tg-logo">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.891 8.146l-2.003 9.464c-.149.659-.541.823-1.091.511l-3.051-2.249-1.472 1.417c-.163.163-.299.299-.614.299l.218-3.111 5.656-5.109c.246-.219-.054-.341-.381-.123l-6.991 4.402-3.016-.944c-.655-.204-.668-.655.137-.969l11.785-4.54c.545-.198 1.022.128.832.941z"/></svg>
+            </div>
             JOIN FREE TELEGRAM
         </a>
     </div>
