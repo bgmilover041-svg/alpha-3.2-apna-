@@ -32,6 +32,7 @@
         width: 100%;
         border-radius: 15px;
         box-shadow: 0 0 25px rgba(0,0,0,0.7);
+        cursor: pointer;
     }
 
     .btn {
@@ -45,7 +46,6 @@
         border-radius: 16px;
         font-size: 20px;
 
-        /* glowing + floating effect */
         box-shadow: 0 0 15px #00ffcc, 0 0 35px #00aaff;
         animation: floatGlow 2s infinite ease-in-out;
         transition: 0.3s;
@@ -56,18 +56,9 @@
     }
 
     @keyframes floatGlow {
-        0% {
-            transform: translateY(0px);
-            box-shadow: 0 0 10px #00ffcc, 0 0 25px #00aaff;
-        }
-        50% {
-            transform: translateY(-8px);
-            box-shadow: 0 0 20px #00ffcc, 0 0 45px #00aaff;
-        }
-        100% {
-            transform: translateY(0px);
-            box-shadow: 0 0 10px #00ffcc, 0 0 25px #00aaff;
-        }
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
     }
 
 </style>
@@ -77,8 +68,12 @@
 
 <div class="container">
 
-    <img class="hero-img" src="https://i.ibb.co/qF4gmJ0m/IMG-1636.jpg" alt="Banner">
+    <!-- CLICKABLE IMAGE -->
+    <a href="https://t.me/+eoTj1kirvwU3YzJl" target="_blank">
+        <img class="hero-img" src="https://i.ibb.co/qF4gmJ0m/IMG-1636.jpg" alt="Banner">
+    </a>
 
+    <!-- BUTTON -->
     <a class="btn" href="https://t.me/+eoTj1kirvwU3YzJl" target="_blank">
         Join Free Telegram
     </a>
