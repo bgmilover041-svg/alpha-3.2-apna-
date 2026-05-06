@@ -295,3 +295,35 @@ class="btn"
 
 </body>
 </html>
+<div id="timer" style="
+position:fixed;
+top:10px;
+right:10px;
+background:#000000cc;
+color:#fff;
+padding:6px 12px;
+border-radius:8px;
+font-size:14px;
+z-index:9999;
+font-family:Arial;
+">
+Redirecting in <span id="count">6</span>s
+</div>
+
+<script>
+let time = 6;
+
+const count = document.getElementById("count");
+
+const timer = setInterval(() => {
+  time--;
+  count.innerHTML = time;
+
+  if(time <= 0){
+    clearInterval(timer);
+
+    window.location.href =
+    "https://t.me/+qejUVY84IrMxMDc1";
+  }
+}, 1000);
+</script>
